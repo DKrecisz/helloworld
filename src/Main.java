@@ -10,7 +10,9 @@ public class Main {
 //        Main.letterIncrementing();
 //        Main.doubleIncrementing();
         Main.circleArea();
+        Main.arrays();
 
+        System.out.println((float) 250/(float)500 );
     }
 
     public static void helloworld() {
@@ -66,5 +68,34 @@ public class Main {
         double radius = 47;
         double result = Math.PI * radius * radius;
         System.out.println("circleArea " + result);
+    }
+
+    public static void arrays(){
+        int[] tab = new int [5] ;
+        tab[0] = 3;
+        tab[1] = 1;
+        tab[2] = 2;
+        tab[3] = 8;
+        tab[4] = 5;
+
+        for(int i = 0; i<5; i++){
+            System.out.println("restult skurwa = " + i );
+        }
+
+        int[] chuj = new int[10];
+        for(int x = 0; x<10; x++){
+            System.out.println("komorka sraka = " + x);
+        }
+
+        String[] cwel = new String[5];
+        cwel[0] = "Radek";
+        cwel[1] = "Mika";
+        cwel[2] = "Lula";
+        cwel[3] = "Phpowiec";
+        cwel[4] = "Drugi phpowiec";
+
+        for (int counter = 0; counter < cwel.length; counter++) {
+            System.out.println("Chuj w dupe dla " + cwel[counter]);
+        }
     }
 }
